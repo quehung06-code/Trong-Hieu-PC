@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trong Hieu Pc</title>
+
+<style>
+body{
+background:#0f0f1a;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+.card{
+background:#1b1b2f;
+margin:20px auto;
+padding:20px;
+width:300px;
+border-radius:15px;
+box-shadow:0 0 15px purple;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:purple;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#a020f0;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Trong Hieu Pc</h1>
+
+<button onclick="toggleMusic()">Bật / Tắt Nhạc</button>
+
+<audio id="music" loop>
+<source src="Nhac.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+<h2>Bluestacks</h2>
+<p>Phiên bản giả lập này dành cho máy yếu</p>
+
+<a href="BlueStacksInstaller.exe" download>
+<button>Tải Bluestacks</button>
+</a>
+</div>
+
+<div class="card">
+<h2>ULTIMATE Tool</h2>
+<p>Tool tối ưu máy</p>
+<p>Mật khẩu giải nén: 1</p>
+<p>Mật khẩu trong tool: 10</p>
+
+<a href="ULTIMATE.rar" download>
+<button>Tải Tool</button>
+</a>
+</div>
+
+<div class="card">
+<h2>TLauncher</h2>
+<p>Dùng để chơi Minecraft</p>
+
+<a href="TLauncher.exe" download>
+<button>Tải TLauncher</button>
+</a>
+</div>
+
+<script>
+let music=document.getElementById("music")
+
+function toggleMusic(){
+if(music.paused){
+music.play()
+}else{
+music.pause()
+}
+}
+</script>
+
+</body>
+</html>
